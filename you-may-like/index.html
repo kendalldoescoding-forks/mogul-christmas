@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="/styles.css">
+      <link rel="stylesheet" href="styles.css">
       <title>Songs like the album.</title>
       <script src="https://kit.fontawesome.com/72f2609661.js" crossorigin="anonymous"></script>
       <link href="music-note.ico" rel="icon" type="image/x-icon" />
@@ -27,30 +28,37 @@
       <div class="random-song">
          <p>
                <i id="random" class="fa fa-random fa-2x"></i>
-               <span><button id="random-button" onClick="openStuff();">Play Random Song</button></span>
+               <span><button class="random" id="random-button" onClick="openStuff();">Play Random Song</button></span>
             </a>
          </p>
+      </div>
+   <div class="suggest-song">
+      <p>
+            <i id="suggest" class="fa fa-plus fa-2x"></i>
+            <span><button class="suggest" id="suggest-button" onclick="window.location.href='song-suggestion'">Suggest a Song</button></span>
+         </a>
+      </p>
    </div>
-      <div class="songs">
-         <p><a href="https://youtu.be/aAuKuyAZ7YM" target="_blank">Must Be Santa by Bryan Adams</a></p>
-         <p><a href="https://youtu.be/R_vmuL0gjU0" target="_blank">Jingle Bell Rock by Bobby Helms</a></p>
-         <p><a href="https://youtu.be/-Xo64Q2ucQ8" target="_blank">Joy To The Word (Cover/Remix) by Pentatonix</a></p>         
-         <p><a href="https://youtu.be/30OaM6b48k8" target="_blank">Joy To The World (Original) by Isaac Watts</a></p>         
-         <p><a href="https://youtu.be/g-OF7KGyDis" target="_blank">We Wish You a Merry Christmas by Arthur Warrell</a></p>
-         <p><a href="https://youtu.be/rnEqv8WcVq8" target="_blank">Have Yourself A Merry Little Christmas by Sam Smith</a></p> 
-         <p><a href="https://youtu.be/JVer2lCjARU" target="_blank">Sleigh Ride by The Ronettes</a></p> 
-         <p><a href="https://youtu.be/PQ-ULzAAb20" target="_blank">Frosty The Snowman (Original) by The Ronettes</a></p>
-         <p><a href="https://youtu.be/18qE6_-2dQs" target="_blank">Frosty The Snowman (Cover/Remix) by Pentatonix</a></p> 
-         <p><a href="https://youtu.be/jIyVB1b2aBs" target="_blank">Frosty The Snowman (Cover/Remix) by Micheal Bublé, ft: The Puppini Sisters</a></p>
-         <p><a href="https://youtu.be/ifCWN5pJGIE" target="_blank">Mary, Did You Know? (Cover/Remix) by Pentatonix</a></p>            
+   <main>
+      <div class="list" id="list"></div>
+      <div class="pagenumbers" id="pagination"></div>
+   </main>
+      <div class="container">
+      <div id="report">
+         <p>
+            <i id="report" class="fa fa-flag fa-2x"></i>
+            <span><button class="report" id="report-button" onclick="window.location.href='report-song'">Report a Song</button></span>
+         </a>
+         </p>
+      </div>
       </div>
       <div class="container">
       <div id="credits" class="credits-button">
          <a href="/credits" id="credits-btn" class="btn">Credits</a>
       </div>
       </div>
-      <div class="container">
    </body>
+   <script src="index.js"></script>
    <script type="text/javascript" src="/scripts/christmasday.js"></script>
    <script src="random-song.js"></script>
     <script src="darkmode.js"></script>
